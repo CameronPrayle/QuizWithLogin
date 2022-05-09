@@ -50,7 +50,7 @@ public class Quiz {
                 }
             }
         }
-        return null;
+        return("locked");
     }
 
 
@@ -99,7 +99,9 @@ public class Quiz {
             choice = userChoice.nextLine();
             if (choice.equals("1")) {
                 String loggedUname = login();
-                quiz(loggedUname);
+                if (!loggedUname.equals("locked")){
+                    quiz(loggedUname);
+                }
             } else if (choice.equals("2")) {
                 register();
             } else {
