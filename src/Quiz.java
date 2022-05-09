@@ -113,33 +113,37 @@ public class Quiz {
     public static void quiz(String uname){
         int score=0;
         System.out.println("\nToday's Quiz is going to be about Minecraft\n");
-        String question1[] = {"15","12","10","9"};
-        System.out.println("Question 1.\nHow many blocks does it take to make a nether portal?");
-        for (int i=0; i< question1.length; i++){
-            System.out.println((i+1)+". "+ question1[i]);
-        }
-        String answer = getNotBlank();
-        if(answer.equals("3")){
-            score++;
-        }
-        String question2[] = {"6","5","4","3"};
-        System.out.println("Question 2.\nHow many wooden planks does it take to make a boat?");
-        for (int i=0; i< question2.length; i++){
-            System.out.println((i+1)+". "+ question2[i]);
-        }
-        answer = getNotBlank();
-        if(answer.equals("2")){
-            score++;
-        }
 
-        String question3[] = {"Dont dig straight down","Always shoot creepers with a bow","Dont mine at night","Build house"};
-        System.out.println("Question 3.\nWhats rule 1 of minecraft?");
-        for (int i=0; i< question3.length; i++){
-            System.out.println((i+1)+". "+ question3[i]);
-        }
-        answer = getNotBlank();
-        if(answer.equals("1")){
-            score++;
+        String question[] = {"Question 1.\nHow many blocks does it take to make a nether portal?\n", "Question 2.\nHow many wooden planks does it take to make a boat?\n", "Question 3.\nWhats rule 1 of minecraft?\n"};
+        String answers[][] = {{"15","12","10","9"}, {"6","5","4","3"}, {"Dont dig straight down","Always shoot creepers with a bow","Dont mine at night","Build house"}};
+
+        for (int i=0; i< answers.length;i++){
+
+//          Print Question
+            System.out.println(question[i]);
+
+//          Print answers corresponding to question index
+            for (int j=0; j< answers[i].length;j++){
+                System.out.println(answers[i][j]);
+            }
+            String answer = getNotBlank();
+
+//          Check that answer is correct against question index
+            if(i==0){
+                if(answer.equals("3")){
+                    score++;
+                }
+            }
+            else if(i==1){
+                if(answer.equals("2")){
+                    score++;
+                }
+            }
+            else{
+                if(answer.equals("1")){
+                    score++;
+                }
+            }
         }
 
         System.out.println(uname+ " got a score of " + score);
