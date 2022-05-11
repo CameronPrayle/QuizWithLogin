@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bc50913-1366-42ef-84a0-4221b5d156e6" name="Changes" comment="Quiz">
+    <list default="true" id="5bc50913-1366-42ef-84a0-4221b5d156e6" name="Changes" comment="Improved Quiz efficiency">
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quiz.java" afterDir="false" />
     </list>
@@ -31,12 +33,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/emsmi/IdeaProjects/Library"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="QuizWithLogin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Quiz" />
       <module name="QuizWithLogin" />
@@ -46,6 +57,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Quiz" />
       </list>
     </recent_temporary>
@@ -58,7 +70,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652104158634</updated>
-      <workItem from="1652104159963" duration="5293000" />
+      <workItem from="1652104159963" duration="5453000" />
+      <workItem from="1652171440599" duration="1200000" />
+      <workItem from="1652277561206" duration="20088000" />
     </task>
     <task id="LOCAL-00001" summary="Quiz">
       <created>1652104518684</created>
@@ -81,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652106685421</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improved Quiz efficiency">
+      <created>1652117326162</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652117326163</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Quiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quiz" />
+    <MESSAGE value="Improved Quiz efficiency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved Quiz efficiency" />
   </component>
 </project>
