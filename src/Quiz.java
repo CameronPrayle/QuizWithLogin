@@ -91,13 +91,16 @@ public class Quiz {
             while(readFile.hasNextLine()){
                 String line = readFile.nextLine();
                 sortLines.add(line);
-
+//              Splits up each line in txt file into arrays, splits occur every space
                 String[] lines = line.split(" ");
+//              Number value is stored in 3rd array (index 2)
                 int numColumn = Integer.parseInt(lines[2]);
                 sortScores.add(numColumn);
             }
 
             Collections.sort(sortScores, Collections.reverseOrder());
+
+//          Loops through list of lines from text file and compares each number in the line to the sorted numbers list, to output the correct order of lines
             for (int i=0; i<sortLines.size(); i++){
                 for (int j=0; j<sortLines.size(); j++){
                     String line = sortLines.get(j);
